@@ -14,8 +14,9 @@
 
         <ul class="list" type="none">
             <li class="item"><a href="#" class="link"><span class="ceve">A</span>ccueil</a></li>
-            <li class="item"><a href="#" class="link"><span class="ceve">C</span>omment proceder<span class="ceve">?</span></a></li>
+            <li class="item"><a href="#comment-faire" class="link"><span class="ceve">C</span>omment proceder<span class="ceve">?</span></a></li>
             <li class="item"><a href="#" class="link"><span class="ceve">A</span> propos</a></li>
+            <li class="item"><a href="#"></a></li>
         </ul>
     </header>
 
@@ -56,15 +57,15 @@
 
 <br>
 <br>
-<br>
-    <div class="comment">
+    <div class="comment" onscroll="hover()" id="comment-faire">
         <div class="items">
-            <div class="container">
-                <div class="first">
-                    <div class="inner">
-                        <span class="con">1</span>
-                    </div>
+            <div class="first">
+                <div class="inner">
+                    <span class="con"> <a href="#" class="li">1</a></span>
                 </div>
+            </div>
+            <br>
+            <div class="container" >
                 <div class="second">
                     <br>
                     <div class="titre">
@@ -72,27 +73,32 @@
                         <br>
                         <br>
                     </div>
+                    <div class="content-text">
                     <p class="texte">
-                        Lorem ipsum dolor sit amet consectetur,
+                        
+                            Lorem ipsum dolor sit amet consectetur,
                          adipisicing elit. Nihil consequatur itaque nobis 
                         numquam quidem nisi quo impedit neque commodi officia.
                     </p>
                 </div>
+                </div>
             </div>
             <div class="between">
-                <div class="mid-between">v</div>
+                <div class="mid-between" onmouseenter = "hove(1)" onmouseleave="unHover(1)">v</div>
             </div>
             <div class="third">
 
             </div>
         </div>
         <div class="items">
-            <div class="container">
-                <div class="first">
-                    <div class="inner">
-                        <span class="con">2</span>
-                    </div>
+            <div class="first">
+                <div class="inner">
+                    <span class="con"> <a href="#" class="li">2</a> </span>
                 </div>
+            </div>
+            <br>
+            <div class="container">
+                
                 <div class="second">
                     <br>
                     <div class="titre">
@@ -100,44 +106,52 @@
                         <br>
                         <br>
                     </div>
-                    <p class="texte">
-                        Lorem ipsum dolor sit amet consectetur,
-                         adipisicing elit. Nihil consequatur itaque nobis 
-                        numquam quidem nisi quo impedit neque commodi officia.
-                    </p>
+                    <div class="content-text">
+                        <p class="texte">
+                            
+                                Lorem ipsum dolor sit amet consectetur,
+                             adipisicing elit. Nihil consequatur itaque nobis 
+                            numquam quidem nisi quo impedit neque commodi officia.
+                        </p>
+                    </div>
                 </div>
             </div>
             <div class="between">
-                <div class="mid-between">v</div>
+                <div class="mid-between" onmouseenter = "hove(2)" onmouseleave="unHover(2)">v</div>
             </div>
             <div class="third">
                 
             </div>
         </div>
         <div class="items">
-            <div class="container">
-                <div class="first">
+            <div class="first">
                     <div class="inner">
-                        <span class="con">3</span>
+                        <span class="con"> <a href="#" class="li">3</a></span>
                     </div>
-                 </div>
+            </div>
+            <br>
+            <div class="container">
+                
                  <div class="second">
                     <br>
                     <div class="titre">
-                        <div class="content">Telecharger</div>
+                        <div class="content">Telecharger le CV</div>
                         <br>
                         <br>
                     </div>
 
-                    <p class="texte">
-                        Lorem ipsum dolor sit amet consectetur,
-                         adipisicing elit. Nihil consequatur itaque nobis 
-                        numquam quidem nisi quo impedit neque commodi officia.
-                    </p>
+                    <div class="content-text">
+                        <p class="texte">
+                            
+                                Lorem ipsum dolor sit amet consectetur,
+                             adipisicing elit. Nihil consequatur itaque nobis 
+                            numquam quidem nisi quo impedit neque commodi officia.
+                        </p>
+                    </div>
                  </div>
             </div>
             <div class="between">
-                <div class="mid-between">v</div>
+                <div class="mid-between" onmouseenter = "hove(3)" onmouseleave="unHover(3)">v</div>
             </div>
             <div class="third">
                 
@@ -145,5 +159,7 @@
          </div>
     </div>
     
+  
+<script src="app.js"></script>
 </body>
 </html>
