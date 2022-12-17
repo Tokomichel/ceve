@@ -230,7 +230,6 @@ div.items .container .first
 {
     display: flex;
     justify-content: center;
-    border-bottom: 1px solid gray;
     width: 100%;
 }
 
@@ -254,7 +253,7 @@ div.items .container .first .inner span.con
 {
     display: flex;
     height: 20%;
-    /* justify-content: center; */
+    justify-content: center;
     color: rgb(105, 99, 99);
 }
 
@@ -271,7 +270,24 @@ p.texte
 {
     display: flex;
     justify-content: center;
-    color: rgb(105, 99, 99);
+    text-align: justify;
 }
 
+.between
+{
+    display: flex;
+    justify-content: center;
+    height: 4vh;
+}
+
+.between .mid-between /* cercle v*/
+{
+    width: 10%;
+    border-radius: 80%;
+    display: flex;
+    justify-content: center;
+    background-color: #F4421C;
+    font-size: 1.4em;
+    color: rgb(209, 205, 205);
+}
 
