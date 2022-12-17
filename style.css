@@ -3,10 +3,14 @@ body
     font-family: 'Tahoma','Arial';
 }
 
-a.link
+a
 {
     text-decoration: none;
     color: none;
+}
+
+a.link
+{
     color: rgb(99, 90, 90);
 }
 
