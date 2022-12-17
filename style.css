@@ -1,0 +1,89 @@
+body
+{
+    font-family: 'Tahoma','Arial';
+}
+
+a.link
+{
+    text-decoration: none;
+    color: none;
+    color: rgb(99, 90, 90);
+}
+
+header.en-tete
+{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: -1.1vh;
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    color: rgb(99, 90, 90);
+}
+
+
+header.en-tete span.title
+{
+    font-size: 3em;
+    line-height: 40px;
+    
+}
+
+span.ceve
+{
+    color: #F4421C;
+    font-size: 1.3em;
+}
+
+header.en-tete ul.list
+{
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+    width: 40%;
+    line-height: 25px;
+}
+
+header.en-tete ul.list .item
+{
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+/* fin du header */
+/* debut de la page accueil */
+
+div.accueil
+{
+    background-image: url("images/main_bg.png");
+    width: 100%;
+    height: 100vh;
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+
+}
+
+div.ligne
+{
+    height: 70%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+
+div.col
+{
+    width: 50%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 1vh;
+}
+
+/* fin de la page accueil */
