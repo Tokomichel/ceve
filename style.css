@@ -140,12 +140,12 @@ aside.rigth
 
 div.col
 {
-    width: 50%;
+    width: 70%;
     height: 100%;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(251, 251, 251);
     border-radius: 1vh;
     color: rgb(99, 90, 90);
-    opacity: 0.95;
+    opacity: 0.85;
     font-family: Calibri, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -174,10 +174,12 @@ div.col .texte
 }
 div.col p.content
 {
-    width: 80%;
-    font-size: 1.3em;
+    width: 100%;
+    font-size: 1.7em;
     text-align: justify;
     color: rgb(115, 107, 107);
+    display: flex;
+    justify-content: center;
 }
 
 
