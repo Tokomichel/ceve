@@ -3,6 +3,25 @@ body
     font-family: 'Tahoma','Arial';
 }
 
+span.animated
+{
+    animation: infinite 3s anime 3s;
+}
+
+.sub-line
+{
+    background-color: cyan;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: right;
+}
+
+.sub-line .truc
+{
+    background-color: red;
+}
+
 a
 {
     text-decoration: none;
@@ -36,7 +55,7 @@ header.en-tete span.title
 span.ceve
 {
     color: #F4421C;
-    font-size: 1.3em;
+    font-size: 1.1em;
 }
 
 header.en-tete ul.list
@@ -87,8 +106,21 @@ aside.left
     width: 30%;
     height: 85%;
     top: 15%;
-    background-color: rgba(0, 225, 255, 0.977);
+    /* background-color: rgba(0, 225, 255, 0.977); */
     position: absolute;
+}
+
+aside.left .left-middle
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: bisque;
+
+    width: 100%;
+    height: 80%;
+    display: none;
 }
 
 aside.rigth
@@ -97,7 +129,7 @@ aside.rigth
     height: 85%;
     top: 15%;
     left: 70%;
-    background-color: red;
+    /* background-color: red; */
     position: absolute;
 }
 
@@ -180,9 +212,66 @@ button.commencer
 div.comment
 {
     display: flex;
+    justify-content: space-evenly;
 }
 
 div.items
 {
-    display: inline;
+  width: 25%;   
 }
+
+div.container
+{
+    border: 1px solid gray;
+    border-radius: 7px;
+}
+
+div.items .container .first
+{
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid gray;
+    width: 100%;
+}
+
+div.items .container .first .inner
+{
+    width: 13%;
+    border-radius: 80%;
+    display: flex;
+    justify-content: center;
+
+    color: rgb(211, 211, 211);
+    background-color: #F4421C;
+}
+
+div.items .container .first .inner span.con 
+{
+    font-size: 2em;
+}
+
+.titre
+{
+    display: flex;
+    height: 20%;
+    /* justify-content: center; */
+    color: rgb(105, 99, 99);
+}
+
+.titre .content
+{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    border-bottom: 1px solid gray;
+    font-size: 1.4em;
+}
+
+p.texte
+{
+    display: flex;
+    justify-content: center;
+    color: rgb(105, 99, 99);
+}
+
+
