@@ -59,7 +59,7 @@ header.en-tete ul.list .item
 
 div.accueil
 {
-    background-image: url("images/main_bg.png");
+    background-image: url("images/accueil_bg.png");
     width: 100%;
     height: 100vh;
     display: flexbox;
@@ -68,18 +68,37 @@ div.accueil
 
 }
 
+
+
 div.ligne
 {
-
     width: 100%;
     display: flex;
     justify-content: center;
 
     position: absolute;
-    top: 55%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    
+}
+
+aside.left
+{
+    width: 30%;
+    height: 85%;
+    top: 15%;
+    background-color: rgba(0, 225, 255, 0.977);
+    position: absolute;
+}
+
+aside.rigth
+{
+    width: 30%;
+    height: 85%;
+    top: 15%;
+    left: 70%;
+    background-color: red;
+    position: absolute;
 }
 
 div.col
@@ -89,6 +108,7 @@ div.col
     background-color: rgb(255, 255, 255);
     border-radius: 1vh;
     color: rgb(99, 90, 90);
+    opacity: 0.95;
     font-family: Calibri, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -154,3 +174,15 @@ button.commencer
 
 
 /* fin de la page accueil */
+
+/* comment proceder ? */
+
+div.comment
+{
+    display: flex;
+}
+
+div.items
+{
+    display: inline;
+}
