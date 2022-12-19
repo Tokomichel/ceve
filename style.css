@@ -25,8 +25,9 @@ span.animated
 a
 {
     text-decoration: none;
-    color: none;
+    color: white;
 }
+
 
 a.link
 {
@@ -45,8 +46,10 @@ header.en-tete
     width: 100%;
     margin-top: -1.1vh;
     position: fixed;
-    background-color: rgb(255, 255, 255);
+    z-index: 10;
+    background-color: rgb(252, 252, 227);
     color: rgb(99, 90, 90);
+    transition: all ease .7s;
 }
 
 
@@ -54,7 +57,6 @@ header.en-tete span.title
 {
     font-size: 3em;
     line-height: 40px;
-    
 }
 
 span.ceve
@@ -76,6 +78,7 @@ header.en-tete ul.list .item
 {
     font-size: 1.2em;
     text-decoration: none;
+    transition: all ease .7s;
 }
 
 /* fin du header */
@@ -83,7 +86,8 @@ header.en-tete ul.list .item
 
 div.accueil
 {
-    background-image: url("images/accueil_bg.png");
+    /* background-image: url("images/accueil_bg.png"); rgb(251, 251, 251)*/
+    background-color: rgb(252, 252, 227);
     width: 100%;
     height: 100vh;
     display: flexbox;
@@ -101,7 +105,7 @@ div.ligne
     justify-content: center;
 
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%,-50%);
 }
@@ -111,21 +115,40 @@ aside.left
     width: 30%;
     height: 85%;
     top: 15%;
-    /* background-color: rgba(0, 225, 255, 0.977); */
+    background-color: rgba(0, 225, 255, 0.977);
     position: absolute;
 }
 
-aside.left .left-middle
+aside.left .ed
 {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    background-color: bisque;
-
+    background-color: rgb(15, 95, 68);
     width: 100%;
-    height: 80%;
-    display: none;
+    height: 10%;
+    border-bottom: 2px solid black;
+    animation: infinite anime 1s;
+}
+
+@keyframes anime
+{
+    0%
+    {
+        opacity: 0;
+        transform: translate(0%, 0%);
+    }
+    50% 
+    {
+        opacity: 1;
+        transform: translate(0%, 50%);
+    }
+    100%
+    {
+        opacity: 0;
+        transform: translate(0%, 100%);
+    }
 }
 
 aside.rigth
@@ -134,7 +157,7 @@ aside.rigth
     height: 85%;
     top: 15%;
     left: 70%;
-    /* background-color: red; */
+    background-color: red;
     position: absolute;
 }
 
@@ -142,7 +165,7 @@ div.col
 {
     width: 70%;
     height: 100%;
-    background-color: rgb(251, 251, 251);
+    /* background-color: rgb(251, 251, 251); */
     border-radius: 1vh;
     color: rgb(99, 90, 90);
     opacity: 0.85;
@@ -188,7 +211,7 @@ div.col p.content
 div.ligne2
 {
     position: absolute;
-    top: 75%;
+    top: 65%;
     left: 50%;
     transform: translate(-50%,-50%);
 
@@ -196,6 +219,28 @@ div.ligne2
     justify-content: center;
     width: 100%;
     height: 7vh;
+}
+
+div.ligne2 a
+{
+    width: 40%;
+    height: 100%;
+    background-color: #F4421C;
+    font-family: Calibri,'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: aliceblue;
+    border: 1px solid #F4421C;
+    border-radius: 7px;
+    font-size: 2em;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 
 button.commencer
@@ -244,13 +289,13 @@ div.container
 
 .first .inner
 {
-    width: 13%;
-    height: 6vh;
+    width: 10%;
+    height: 5vh;
     border-radius: 80%;
     display: flex;
     justify-content: center;
 
-    color: rgb(192, 192, 192);
+    color: rgb(202, 202, 202);
     /* background-color: #F4421C; */
     border: 2px solid #F4421C;
     transition: all ease 0.7s;
@@ -259,12 +304,13 @@ div.container
 .first .inner:hover
 {
     background-color: #F4421C;
-    border: 2px solid rgb(163, 163, 50);
-    color: rgb(255, 255, 255);
+    border: 2px solid rgb(218, 218, 22);
+    color: white;
 }
 
  .first .inner span.con 
 {
+    margin-bottom: 5px;
     font-size: 2em;
 }
 
@@ -281,6 +327,7 @@ div.container
     display: flex;
     /* justify-content: center; */
     width: 90%;
+    margin-left: 4vh; 
     border-bottom: 1px solid gray;
     font-size: 1.8em;
 }
@@ -295,7 +342,6 @@ div.content-text
 
 p.texte
 {
-    
     width: 85%;
     text-align: justify;
     font-size: 1.2em;
@@ -319,12 +365,35 @@ p.texte
     color: rgb(209, 205, 205);
 }
 
-.third
+/* .third
 {
     background-image: url("images/main_bg.png");
     width: 100%;
     height: 40vh;
     animation: 2s anime;
+} */
+
+/* fin de div.comment */
+
+.astuce-container
+{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    transition: all ease .7s;
+}
+
+.astuce-container .astuce-card
+{
+    width: 50%;
+    height: 100%;
+    border-radius: 2vh;
+    border: 1px solid gray;
+    transition: all ease 1s;
+}
+.bg{
+    background-color: #fff;
 }
 
 @keyframes anime

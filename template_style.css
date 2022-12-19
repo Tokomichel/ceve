@@ -1,0 +1,198 @@
+body
+{
+    font-family: 'Tahoma','Arial';
+    overflow: hidden;
+}
+
+span.animated
+{
+    animation: infinite 3s anime 3s;
+}
+
+.sub-line
+{
+    background-color: cyan;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: right;
+}
+
+.sub-line .truc
+{
+    background-color: red;
+}
+
+a
+{
+    text-decoration: none;
+    color: white;
+}
+
+a.but
+{
+    color: white;
+}
+
+a.link
+{
+    color: rgb(99, 90, 90);
+}
+
+a.li
+{
+    color: rgb(192, 192, 192);
+}
+
+header.en-tete
+{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: -1.1vh;
+    position: fixed;
+    z-index: 10;
+    background-color: rgb(252, 252, 227);
+    color: rgb(99, 90, 90);
+}
+
+
+header.en-tete span.title
+{
+    font-size: 3em;
+    line-height: 40px;
+}
+
+span.ceve
+{
+    color: #F4421C;
+    font-size: 1.1em;
+}
+
+header.en-tete ul.list
+{
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+    width: 40%;
+    line-height: 25px;
+}
+
+header.en-tete ul.list .item
+{
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+/* templates */
+
+.temp
+{
+    background-color: rgb(252, 252, 227);
+    width: 100%;
+    height: 95vh;
+
+    display: flex;
+    justify-content: space-around;
+    grid-auto-flow: column;
+    overflow-x: auto;
+    gap: 10px;
+    padding: 10px;
+    scroll-behavior: unset;
+}
+
+.temp::-webkit-scrollbar
+{
+    display: none;
+}
+
+.temp-card
+{
+    /* top: 15%;
+    left: 15%; */
+    /* transform: translate(45%, 8%); */
+    width: 35%;
+    height: 90%;
+    margin: 3vh;
+}
+
+
+.temp-card img
+{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contain
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: right;
+    padding: 3px;
+
+    color: gray;
+    font-family: Calibri;
+}
+
+.sec1
+{
+    height: 100%;
+    width: 37%;
+    background-color: rgb(244, 244, 244);
+    padding: 4px;
+    border-left: 5vh solid gray;
+    border-bottom-left-radius: 7px;
+    border-top-left-radius: 7px;
+
+}
+
+ .tit
+{
+    font-size: 1.2em;
+    border-bottom: 1px solid rgb(146, 146, 146);
+    padding: 5px;
+}
+
+.content
+{
+    padding: 4px;
+    color: rgb(79, 79, 79);
+    font-weight: 600;
+}
+
+ .content .element
+{
+    margin: 1.4vh;
+}
+
+.sec2
+{
+    height: 99%;
+    width: 50%;
+    padding: 1.2vh;
+    background-color: rgb(252, 252, 252);
+}
+
+.fullname
+{
+    font-size: 1.4em;
+}
+

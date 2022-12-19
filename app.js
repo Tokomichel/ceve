@@ -1,41 +1,87 @@
 let fleches = document.querySelectorAll(".mid-between");
 let thirds = document.querySelectorAll(".third");
+let nth = document.querySelectorAll('.inner');
+let astuce = document.querySelector(".astuce-card");
+let navbar = document.querySelector(".en-tete");
+let timer;
+let count = 0;
+let duree = 30;
+let done = false;
 
-console.log(thirds);
 
-for (let i = 0; i < thirds.length; i++) {
-   thirds[i].style.display = "none"; 
+
+
+
+
+
+
+function likeHove(i)
+{
+   nth[i].style.backgroundColor = "#F4421C";
+   nth[i].style.border = "2px solid #F4421C";
+   nth[i].style.color = "white";
 }
 
-
-// for (let i = 0; i < fleches.length; i++)
-// {
-//     fleches[i].onmouseenter = hove;
-//     fleches[i].onmouseleave = unHove;
-//     // fleches[i].addEventListener("", unHover);
-
-// }
-
-function hove(i)
+function dehove(i)
 {
-   fleches[i-1].style.color = "white";
-   thirds[i-1].style.display = "block";
-   // console.log("hove");
+   nth[i].style.backgroundColor = "white";
+   nth[i].style.border = "2px solid #F4421C";
+   nth[i].style.color = "rgb(192, 192, 192)";
 }
 
-function hover()
+function animation()
 {
-   console.log("Hover lancee");
-   for (let i = 0; i < fleches.length; i++) 
+   count++;
+   if(count < duree)
    {
-      // fleches[i-1].style.color = "white";
-      thirds[i-1].style.display = "block";
+      // comme si on a fait un hover
+      dehove(2)
+      likeHove(0);
+      astuce.style.backgroundImage = "url(\"images/canto.png\")";
+   }
+   else if(count === duree)
+   {
+      dehove(0);
+      likeHove(1);
+      astuce.style.backgroundImage = "url(\"images/Canto1.PNG\")";
+      
+   }
+   else if(count === duree*2)
+   {
+      dehove(1);
+      likeHove(2);
+      astuce.style.backgroundImage = "url(\"images/Canto2.PNG\")";
+   }
+   else if(count == duree*3)
+   {
+      count = 0;
    }
 }
 
-function unHover(i)
-{
-   fleches[i-1].style.color = "rgb(209, 205, 205)";
-   //thirds[i-1].style.display = "none";
-   // console.log("unhove");
-}
+
+window.addEventListener('scroll', () => {
+
+   if(scrollY > 40)
+   {
+      navbar.style.backgroundColor = "rgb(255, 255, 255)";
+      console.log("ok "+navbar.style.backgroundColor);
+
+      if(scrollY > 600)
+      {
+         if(!done)
+         {
+            timer = setInterval(animation, 100);
+            done = true;
+         }
+      }
+   }
+   else
+   {
+      navbar.style.backgroundColor = "rgb(252, 252, 227)";
+   }
+
+   
+});
+// background-image: url("images/canto.png");
+// background-image: url("images/Canto1.PNG");
+// background-image: url("images/Canto2.PNG"); 
