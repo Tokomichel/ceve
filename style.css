@@ -1,6 +1,7 @@
 body
 {
     font-family: 'Tahoma','Arial';
+    overflow-x: hidden;
 }
 
 span.animated
@@ -32,6 +33,12 @@ a
 a.link
 {
     color: rgb(99, 90, 90);
+    transition: all ease .7s;
+}
+
+a.link:hover
+{
+    color: rgb(26, 24, 24);
 }
 
 a.li

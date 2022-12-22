@@ -98,7 +98,6 @@ header.en-tete ul.list .item
     overflow-x: auto;
     gap: 10px;
     padding: 10px;
-    scroll-behavior: unset;
 }
 
 .temp::-webkit-scrollbar
