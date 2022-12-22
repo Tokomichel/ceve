@@ -3,13 +3,14 @@ let thirds = document.querySelectorAll(".third");
 let nth = document.querySelectorAll('.inner');
 let astuce = document.querySelector(".astuce-card");
 let navbar = document.querySelector(".en-tete");
+let button = document.querySelector("button.commencer");
 let timer;
 let count = 0;
 let duree = 30;
 let done = false;
 
 
-
+console.log(window.location.pathname);
 
 
 
@@ -64,7 +65,6 @@ window.addEventListener('scroll', () => {
    if(scrollY > 40)
    {
       navbar.style.backgroundColor = "rgb(255, 255, 255)";
-      console.log("ok "+navbar.style.backgroundColor);
 
       if(scrollY > 600)
       {
