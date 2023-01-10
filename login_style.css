@@ -1,0 +1,51 @@
+body
+{
+    font-family: 'Tahoma','Arial';
+}
+
+.row
+{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 75vh;
+}
+
+.container
+{
+    width: 40%;
+    height: 100%;
+    background-color: bisque;
+    border-radius: 6px;
+}
+
+.row1, .row3
+{
+    width: 100%;
+    height: 20%;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: left;
+}
+
+.row2
+{
+    width: 100%;
+    height: 65%;
+    background-color: burlywood;
+    position: relative;
+    opacity: .7;
+}
+
+.row3
+{
+    justify-content: right;
+}
+
+.cercle-rouge
+{
+    background-color: red;
+    width: 22%;
+    height: 100%;
+    border-radius: 50%;
+}

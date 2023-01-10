@@ -1,0 +1,115 @@
+a
+{
+    text-decoration: none;
+}
+
+/* .div
+{
+    border-radius: 50%;
+    background-color: rgb(50, 99, 50);
+    width: 15px;
+    height: 15px;
+    position: absolute;
+} */
+
+.underline
+{
+    height: 1px;
+    width: 0%;
+    background-color: black;
+    transition: all ease 0.5s;
+}
+
+a.link
+{
+    color: rgb(99, 90, 90);
+    transition: all ease .7s;
+}
+
+a.link::after
+{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    margin: 0px 1px;
+    background-color: black;
+    transform: scale(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+a.link:hover::after
+{
+    transform: scale(1);
+}
+
+a.link:hover
+{
+    color: rgb(26, 24, 24);
+}
+
+a.link:hover ~ .underline
+{
+    width: 100%;
+}
+
+a.li
+{
+    color: rgb(192, 192, 192);
+}
+
+header.en-tete
+{
+    display: flex;
+    justify-content: space-between;
+    width: 99%;
+    margin-top: -1.1vh;
+    position: fixed;
+    z-index: 10;
+    background-color: rgb(252, 252, 227);
+    color: rgb(99, 90, 90);
+    transition: all ease .7s;
+}
+
+
+header.en-tete span.title
+{
+    font-size: 3em;
+    line-height: 40px;
+}
+
+span.ceve
+{
+    color: #F4421C;
+    font-size: 1.1em;
+}
+
+header.en-tete ul.list
+{
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+    width: 40%;
+    line-height: 25px;
+}
+
+header.en-tete ul.list .item
+{
+    font-size: 1.2em;
+    text-decoration: none;
+    transition: all ease .7s;
+}
+
+
+header button
+{
+    left: -5vh;
+    width: 2%;
+    height: 4vh;
+    border-radius: 50%;
+    border: none;
+    background-color:rgb(244, 66, 28);
+    box-shadow: 0 0 0 0 rgb(244, 66, 28);
+    animation: pulse 1.2s infinite;
+    cursor: pointer;
+}

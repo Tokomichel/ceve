@@ -2,6 +2,7 @@ body
 {
     font-family: 'Tahoma','Arial';
     overflow-x: hidden;
+    
 }
 
 span.animated
@@ -23,99 +24,7 @@ span.animated
     background-color: red;
 }
 
-a
-{
-    text-decoration: none;
-}
 
-a.link
-{
-    color: rgb(99, 90, 90);
-    transition: all ease .7s;
-}
-
-a.link::after
-{
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    margin: 0px 1px;
-    background-color: black;
-    transform: scale(0);
-    transition: transform 0.2s ease-in-out;
-}
-
-a.link:hover::after
-{
-    transform: scale(1);
-}
-
-a.link:hover
-{
-    color: rgb(26, 24, 24);
-}
-
-a.li
-{
-    color: rgb(192, 192, 192);
-}
-
-header.en-tete
-{
-    display: flex;
-    justify-content: space-between;
-    width: 99%;
-    margin-top: -1.1vh;
-    position: fixed;
-    z-index: 10;
-    background-color: rgb(252, 252, 227);
-    color: rgb(99, 90, 90);
-    transition: all ease .7s;
-}
-
-
-header.en-tete span.title
-{
-    font-size: 3em;
-    line-height: 40px;
-}
-
-span.ceve
-{
-    color: #F4421C;
-    font-size: 1.1em;
-}
-
-header.en-tete ul.list
-{
-    display: flex;
-    justify-content: space-around;
-    text-decoration: none;
-    width: 40%;
-    line-height: 25px;
-}
-
-header.en-tete ul.list .item
-{
-    font-size: 1.2em;
-    text-decoration: none;
-    transition: all ease .7s;
-}
-
-
-header button
-{
-    left: -5vh;
-    width: 2%;
-    height: 4vh;
-    border-radius: 50%;
-    border: none;
-    background-color:rgb(244, 66, 28);
-    box-shadow: 0 0 0 0 rgb(244, 66, 28);
-    animation: pulse 1.2s infinite;
-    cursor: pointer;
-}
 
 /* fin du header */
 /* debut de la page accueil */
@@ -158,6 +67,8 @@ aside.left
  .ed
 {
    position: absolute;
+   display: flex;
+   opacity: 0;
    bottom: 15%;
    width: 65%;
    height: 30px;
@@ -174,40 +85,47 @@ aside.left
     animation-delay: 0.6s;
     font-size: 1.8em;
     z-index: 0;
+    color: orange;
 }
 .ed:nth-child(2)
 {
     animation-delay: 1.6s;
     font-size: 2.4em;
     animation: moov 6s infinite;
+    color: crimson;
 }
 .ed:nth-child(3)
 {
     animation-delay: 2.4s;
+    color: #6fc344;
 }
 .ed:nth-child(4)
 {
     animation-delay: 3.2s;
     left: 35%;
     font-size: 1.6em;
+    color: rgb(188, 145, 36);
 }
 .ed:nth-child(5)
 {
     animation-delay: 0s;
     left: 20%;
     font-size: larger;
+    color: #F4421C;
 }
 .ed:nth-child(6)
 {
     animation-delay: 1s;
     left: 50%;
     font-size: 1.2em;
+    color: rgb(118, 12, 102);
 }
 .ed:nth-child(7)
 {
     animation-delay: 0.7s;
     font-size: 1.4em;
     left: 70%;
+    color: #be0e5a;
 }
 
 
@@ -302,8 +220,8 @@ div.ligne2
 
 div.ligne2 a
 {
-    width: 40%;
-    height: 100%;
+    width: 20%;
+    height: 90%;
     background-color: #F4421C;
     font-family: Calibri,'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: aliceblue;
@@ -315,20 +233,24 @@ div.ligne2 a
     justify-content: center;
     text-align: center;
     align-items: center;
-
+    box-shadow: 0 0 0 0 rgb(244, 66, 28);
     position: absolute;
     top: 65%;
     left: 50%;
     transform: translate(-50%,-50%);
+    animation: infinite 1.5s pulse 0.8s;
 }
 
-
+/* div.ligne2 a:hover
+{
+    animation: pulse .8s;
+} */
 
 @keyframes pulse
 {
     to 
     {
-        box-shadow: 0 0 0 15px rgb(244, 66, 28, 0.01);
+        box-shadow: 0 0 0 15px rgba(244, 90, 55, 0.01);
     }
 }
 
@@ -474,18 +396,38 @@ p.texte
     display: flex;
     justify-content: center;
     transition: all ease .7s;
+    
 }
 
 .astuce-container .astuce-card
 {
     width: 50%;
     height: 100%;
-    border-radius: 2vh;
-    border: 1px solid gray;
+    padding: 2px;
     transition: all ease 1s;
 }
+
+.astuce-container .astuce-card img.alternate
+{
+    width: 100%;
+    height: 100%;
+    display: none;
+    opacity: 0;
+    transition: all ease 0.7s;
+}
+
+
+
 .bg{
     background-color: #fff;
+}
+
+
+.a-propos
+{
+    width: 100%;
+    height: 25vh;
+    background-color: rgb(212, 212, 212);
 }
 
 @keyframes anime
