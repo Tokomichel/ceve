@@ -17,31 +17,31 @@ let elt = document.querySelectorAll("a.link")[1];
 
 const body = document.querySelector('body');
 
-body.addEventListener('mousemove', cursorCircle);
-body.style.zIndex = -1;
-const circle = document.createElement('div');
+// body.addEventListener('mousemove', cursorCircle);
+// body.style.zIndex = -1;
+// const circle = document.createElement('div');
 
 
-function cursorCircle(e)
-{
-   console.log(circle.style.zIndex);
+// function cursorCircle(e)
+// {
+//    console.log(circle.style.zIndex);
   
 
-   circle.style.backgroundColor = "rgb(255, 255, 255)";
-   circle.style.width = '50px';
-   circle.style.height = '50px';
-   circle.style.borderRadius =   '50%';
-   circle.style.position = 'absolute';
-   circle.style.zIndex = 5000;
+//    circle.style.backgroundColor = "rgb(255, 255, 255)";
+//    circle.style.width = '50px';
+//    circle.style.height = '50px';
+//    circle.style.borderRadius =   '50%';
+//    circle.style.position = 'absolute';
+//    circle.style.zIndex = 5000;
 
-   circle.classList.add('circle');
-   body.appendChild(circle);
+//    circle.classList.add('circle');
+//    body.appendChild(circle);
 
-   const x = e.clientX;
-   const y = e.clientY;
+//    const x = e.clientX;
+//    const y = e.clientY;
 
-   circle.style.transform = `translateX(${x}px) translateY(${y}px)`;
-}
+//    circle.style.transform = `translateX(${x}px) translateY(${y}px)`;
+// }
 
 
 

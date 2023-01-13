@@ -430,6 +430,53 @@ p.texte
     background-color: rgb(212, 212, 212);
 }
 
+/* A quoi sert un cv */
+.bas
+{
+    display: flex;
+    height: fit-content;
+    justify-content: center;
+    width: 100%;
+    padding: 15px;
+}
+
+.section
+{
+    border-radius: 5px;
+    width: 100%;
+    height: 90vh;
+    margin-top: 100px;
+    box-shadow: 2px 3px 5px 5px rgba(114, 114, 114, 0.6);
+    position: relative;
+}
+
+.section .white
+{
+    width: 100%;
+    height: 80%;
+}
+
+.section .black
+{
+    width: 100%;
+    height: 20%;
+    background-color: #F4421C;
+}
+
+div.middle-content
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 85%;
+    height: 85%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 3px 4px 4px 3px rgba(49, 49, 49, 0.683);
+}
+
+
+
 @keyframes anime
 {
     0%
