@@ -431,22 +431,22 @@ p.texte
 }
 
 /* A quoi sert un cv */
+
 .bas
 {
     display: flex;
     height: fit-content;
     justify-content: center;
     width: 100%;
-    padding: 15px;
+    padding: 25px;
 }
 
 .section
 {
-    border-radius: 5px;
-    width: 100%;
+    width: 97%;
     height: 90vh;
     margin-top: 100px;
-    box-shadow: 2px 3px 5px 5px rgba(114, 114, 114, 0.6);
+    box-shadow: 2px 3px 5px 5px rgba(114, 114, 114, 0.744);
     position: relative;
 }
 
@@ -466,17 +466,56 @@ p.texte
 div.middle-content
 {
     position: absolute;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 85%;
     height: 85%;
-    background-color: rgb(255, 255, 255);
+    /* background-color: rgb(255, 255, 255); */
+    /* box-shadow: 3px 4px 4px 3px rgba(49, 49, 49, 0.683); */
+}
+
+.middle-content .un
+{
+    width: 40%;
+    height: 100%;
     box-shadow: 3px 4px 4px 3px rgba(49, 49, 49, 0.683);
 }
 
+.middle-content .un img
+{
+    width: 100%;
+    height: 100%;
+}
 
+.middle-content .deux
+{
 
+    width: 57%;
+    height: 100%;
+    box-shadow: 3px 4px 4px 3px rgba(49, 49, 49, 0.683);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+h3
+{
+    text-align: center;
+    font-weight: unset;
+    color: rgb(46, 46, 46);
+    font-size: 1.5em;
+    margin-bottom: 25px;
+}
+
+ul li.how
+{
+    margin-bottom: 35px;
+    font-size: 1.5em;  
+    color: rgb(58, 58, 58);
+}
 @keyframes anime
 {
     0%
